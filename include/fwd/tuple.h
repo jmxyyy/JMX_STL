@@ -18,13 +18,13 @@ namespace jmx {
     constexpr typename tuple_element<Ip, Tp...>::type& get(tuple<Tp...>&) noexcept;
 
     template <size_t Ip, typename... Tp>
-    constexpr typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
+    constexpr const typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
 
     template <size_t Ip, typename... Tp>
     constexpr typename tuple_element<Ip, Tp...>::type& get(tuple<Tp...>&) noexcept;
 
     template <size_t Ip, typename... Tp>
-    constexpr typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
+    constexpr const typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
 }
 
 #endif
