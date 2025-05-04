@@ -10,8 +10,9 @@ based on llvm:release/20.x libc++
 
 一概不考虑对旧标准兼容, 以最新特性为基准
 
-## TODO_LIST
+对于隐藏abi, 为简洁性不添加宏, 变量名使用下划线开头修饰
 
+## TODO_LIST
 - [] include
     - [] cstddef
         - [x] size_t
@@ -19,11 +20,23 @@ based on llvm:release/20.x libc++
         - [x] nullptr_t
         - [] max_align_t
         - [] byte
-    - [] concepts // cxx20 引入, 存在开洞, 搁置
-    - [] iterator
-        - [x] access
-        - [x] readable_traits
-    - [] fwd  // 向前声明
+    - [] type_traits
+        - [x] integral_constant
+        - [x] enable_if
+    - [] fwd
+        - [x] memory
         - [x] array
         - [x] tuple
         - [x] pair
+    - [] utility
+        - [x] move
+        - [x] forward
+    - [] iterator
+        - [x] access
+        - [x] readable_traits
+
+## 已知需build in
+- type_traits
+    - is_xxx
+- memory
+    - addressof

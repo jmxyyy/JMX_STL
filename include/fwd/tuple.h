@@ -15,16 +15,16 @@ namespace jmx {
     struct tuple_size;
 
     template <size_t Ip, typename... Tp>
-    constexpr typename tuple_element<Ip, Tp...>::type& get(tuple<Tp...>&) noexcept;
+    constexpr typename tuple_element<Ip, Tp...>::type& _get(tuple<Tp...>&) noexcept;
 
     template <size_t Ip, typename... Tp>
-    constexpr const typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
+    constexpr const typename tuple_element<Ip, Tp...>::type&& _get(const tuple<Tp...>&&) noexcept;
 
     template <size_t Ip, typename... Tp>
-    constexpr typename tuple_element<Ip, Tp...>::type& get(tuple<Tp...>&) noexcept;
+    constexpr typename tuple_element<Ip, Tp...>::type& _get(tuple<Tp...>&) noexcept;
 
     template <size_t Ip, typename... Tp>
-    constexpr const typename tuple_element<Ip, Tp...>::type&& get(const tuple<Tp...>&&) noexcept;
+    constexpr const typename tuple_element<Ip, Tp...>::type&& _get(const tuple<Tp...>&&) noexcept;
 }
 
 #endif

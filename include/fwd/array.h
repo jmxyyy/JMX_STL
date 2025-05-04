@@ -3,7 +3,6 @@
 
 #include "../cstddef/size_t.h"
 
-#include <cstddef>
 #include <type_traits>
 
 namespace jmx {
